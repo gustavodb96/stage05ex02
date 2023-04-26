@@ -1,0 +1,129 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+
+  --base-color: 0;
+
+  --bg-primary: hsla(var(--base-color), 0%, 100%, 1);
+  --bg-button: hsl(var(--base-color), 9%, 89%);
+  --bg-buttonhover: hsl(var(--base-color), 97%, 31%);
+
+  --ff-color: hsl(var(--base-color), 6%, 21%);
+
+  font-size: 62.5%;
+
+}
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19.2rem;
+
+  min-height: 100vh;
+
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+
+  width: 32.1rem;
+  height: 21.3rem;
+  line-height: 14.8rem;
+
+  color: var(--ff-color);
+  text-align: center;
+
+}
+
+span + span {
+
+  margin-left: -3.5rem;
+
+}
+
+#timer-button {
+
+  display: flex;
+  gap: 4.0rem;
+
+  height: 4.8rem; 
+
+}
+
+#timer-button button {
+
+  background: transparent;
+  border: none;
+
+}
+
+.pathPlay.active {
+
+  fill: var(--bg-buttonhover);
+
+}
+
+#mode-button {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+
+  width: 30.8rem;
+  height: 33.6rem;
+
+}
+
+#mode-button button {
+
+  border-radius: 2.4rem;
+  border: none;
+
+  background: var(--bg-button);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+}
+
+#mode-button button.active {
+
+  background-color: var(--bg-buttonhover);
+
+}
+
+#mode-button button svg path.forest.active{
+
+  fill: white
+
+}
+
+#mode-button button svg path.rain.active{
+
+  fill: white
+
+}
+
+#mode-button button svg path.coffe-shop.active{
+
+  fill: white
+
+}
+
+#mode-button button svg path.fireplace.active{
+
+  fill: white
+
+}
